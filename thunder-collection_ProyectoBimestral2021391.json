@@ -1,0 +1,467 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "ProyectoBimestral2021391",
+    "dateExported": "2024-02-23T17:32:53.436Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "2cb723f5-0a91-4a52-860b-c3106a69ff0b",
+            "name": "Categorie",
+            "containerId": "",
+            "created": "2024-02-22T19:15:47.954Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "2ebf5cf8-34f6-41ee-8eed-be5e0b14f395",
+            "name": "Envoice",
+            "containerId": "",
+            "created": "2024-02-22T19:16:24.419Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "6620c954-e0a9-47ba-ad62-690b4e401a9f",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-02-22T19:16:30.856Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "d3a75a92-33d6-4576-a6a8-2c9610ab9169",
+            "name": "Product",
+            "containerId": "",
+            "created": "2024-02-22T19:16:49.103Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "f846c643-4a82-435e-afb7-24b1ee4eeb3c",
+            "colId": "027364a1-199a-4a20-8225-d7e4e610dc1d",
+            "containerId": "6620c954-e0a9-47ba-ad62-690b4e401a9f",
+            "name": "register",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-22T19:17:52.068Z",
+            "modified": "2024-02-23T17:06:06.150Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ3YmEzM2I2ODc2ZjBjMzI3MjU2NjUiLCJ1c2VybmFtZSI6ImlzYWRtaW4iLCJuYW1lIjoiSVMiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg3MDc5MzAsImV4cCI6MTcwODcxODczMH0.gQkPUzbWnq4dZWIW1iiUrmkTzm02IvTCl-QsRRB7ESA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Manuelito"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "González"
+                    },
+                    {
+                        "name": "username",
+                        "value": "mgonzalez2"
+                    },
+                    {
+                        "name": "password",
+                        "value": "1234"
+                    },
+                    {
+                        "name": "email",
+                        "value": "mgonzalez@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "role",
+                        "value": "ADMIN",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "be9dcded-45e4-4eb5-a5e1-c46c0d33f0e9",
+            "colId": "027364a1-199a-4a20-8225-d7e4e610dc1d",
+            "containerId": "6620c954-e0a9-47ba-ad62-690b4e401a9f",
+            "name": "login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-22T19:45:47.305Z",
+            "modified": "2024-02-23T17:12:15.433Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "mgonzalez2"
+                    },
+                    {
+                        "name": "password",
+                        "value": "1234"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5eba9f0e-13c9-4696-8dbd-a39c04725f08",
+            "colId": "027364a1-199a-4a20-8225-d7e4e610dc1d",
+            "containerId": "6620c954-e0a9-47ba-ad62-690b4e401a9f",
+            "name": "update",
+            "url": "/user/update/65d7aa962d1cbbf4097ca453",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-02-22T19:46:37.811Z",
+            "modified": "2024-02-22T20:21:31.345Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1nb256YWxleiIsIm5hbWUiOiJNYW51ZWwiLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzA4NjMzMjU3LCJleHAiOjE3MDg2NDQwNTd9.c7yKvCdIud187Ww8SaG2sUMqF1mPazCo1bBGWKqTg04"
+                },
+                {
+                    "name": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1nb256YWxleiIsIm5hbWUiOiJNYW51ZWwiLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzA4NjMyNTE5LCJleHAiOjE3MDg2NDMzMTl9.EoTVpWYRn7EX2xqpfmPy36t8BNkVbkDQUL3q_icsToI",
+                    "value": "",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Manolo"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Gálvez"
+                    },
+                    {
+                        "name": "username",
+                        "value": "mgalvez1"
+                    },
+                    {
+                        "name": "email",
+                        "value": "mgalvez@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "1fa3ef8f-934b-4777-a8a6-502f5e5bdb21",
+            "colId": "027364a1-199a-4a20-8225-d7e4e610dc1d",
+            "containerId": "6620c954-e0a9-47ba-ad62-690b4e401a9f",
+            "name": "delete",
+            "url": "/user/delete/65d8d07ec2058d620a52bd6f",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-02-22T20:02:28.031Z",
+            "modified": "2024-02-23T17:12:22.837Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ4ZDA3ZWMyMDU4ZDYyMGE1MmJkNmYiLCJ1c2VybmFtZSI6Im1nb256YWxlejIiLCJuYW1lIjoiTWFudWVsaXRvIiwicm9sZSI6IkNMSUVOVCIsImlhdCI6MTcwODcwODMzNSwiZXhwIjoxNzA4NzE5MTM1fQ.lkMjh2vr7lrrP_lA77dbmkbxUYAtM4oE2E1ASVvlQcU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ae7c6659-5641-476f-80a4-3b4921a4601b",
+            "colId": "027364a1-199a-4a20-8225-d7e4e610dc1d",
+            "containerId": "2cb723f5-0a91-4a52-860b-c3106a69ff0b",
+            "name": "create",
+            "url": "/categorie/create",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-02-22T22:26:36.741Z",
+            "modified": "2024-02-23T01:01:46.625Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "galletas"
+                    },
+                    {
+                        "name": "description",
+                        "value": "pasta compuesta de harina, azúcar y a veces huevo, manteca o confituras diversas, que, dividida en trozos pequeños y moldeados o modelados en forma varia, se cuece al horno."
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d95a9804-6fe4-4333-b914-23d99c4850d7",
+            "colId": "027364a1-199a-4a20-8225-d7e4e610dc1d",
+            "containerId": "2cb723f5-0a91-4a52-860b-c3106a69ff0b",
+            "name": "update",
+            "url": "/categorie/update/65d7cd06162f953319d9daf4",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-02-22T22:26:43.767Z",
+            "modified": "2024-02-22T22:43:07.706Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "embutidos"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c159f5d8-67a5-4784-b74d-93af685a2b7e",
+            "colId": "027364a1-199a-4a20-8225-d7e4e610dc1d",
+            "containerId": "2cb723f5-0a91-4a52-860b-c3106a69ff0b",
+            "name": "delete",
+            "url": "/categorie/delete/65d7cd06162f953319d9daf4",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-02-22T22:47:26.163Z",
+            "modified": "2024-02-22T22:48:09.389Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3e38898f-3336-4b83-aa8c-a06a8e92dbee",
+            "colId": "027364a1-199a-4a20-8225-d7e4e610dc1d",
+            "containerId": "2cb723f5-0a91-4a52-860b-c3106a69ff0b",
+            "name": "get",
+            "url": "/categorie/get",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-02-22T22:53:20.255Z",
+            "modified": "2024-02-23T14:32:54.132Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "16b17ebc-5ece-441b-8994-1c283253acf2",
+            "colId": "027364a1-199a-4a20-8225-d7e4e610dc1d",
+            "containerId": "d3a75a92-33d6-4576-a6a8-2c9610ab9169",
+            "name": "create",
+            "url": "/product/create",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-02-23T00:55:22.816Z",
+            "modified": "2024-02-23T14:54:34.607Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Oreo Vainilla"
+                    },
+                    {
+                        "name": "description",
+                        "value": "paquete de 8 galletas de vainilla con crema"
+                    },
+                    {
+                        "name": "categorie",
+                        "value": "65d7ee7a6fffa8c620998351"
+                    },
+                    {
+                        "name": "price",
+                        "value": "Q17.00"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "736c0b6d-aae2-4593-a1ab-592a09638676",
+            "colId": "027364a1-199a-4a20-8225-d7e4e610dc1d",
+            "containerId": "2cb723f5-0a91-4a52-860b-c3106a69ff0b",
+            "name": "search",
+            "url": "/categorie/search",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-02-23T14:42:41.912Z",
+            "modified": "2024-02-23T14:56:26.937Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "id",
+                        "value": "65d7d07873e8453daf512e86"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "172cd48e-e3f7-438f-b587-619040fc0b10",
+            "colId": "027364a1-199a-4a20-8225-d7e4e610dc1d",
+            "containerId": "d3a75a92-33d6-4576-a6a8-2c9610ab9169",
+            "name": "update",
+            "url": "/product/update/65d7eebf4b9c0a23a7c2fb88",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-02-23T01:07:23.260Z",
+            "modified": "2024-02-23T01:26:26.076Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Galleta Oreo"
+                    },
+                    {
+                        "name": "description",
+                        "value": "paquete de 10 galletas de chocolate con crema"
+                    },
+                    {
+                        "name": "price",
+                        "value": "Q18.00"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "710fbd3e-ca00-4db6-8a31-7e68ee3a4e76",
+            "colId": "027364a1-199a-4a20-8225-d7e4e610dc1d",
+            "containerId": "d3a75a92-33d6-4576-a6a8-2c9610ab9169",
+            "name": "delete",
+            "url": "/product/delete/65d7eebf4b9c0a23a7c2fb88",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2024-02-23T01:31:03.052Z",
+            "modified": "2024-02-23T01:31:29.713Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "16a91a3f-01c8-4f98-b309-8945ffc08348",
+            "colId": "027364a1-199a-4a20-8225-d7e4e610dc1d",
+            "containerId": "d3a75a92-33d6-4576-a6a8-2c9610ab9169",
+            "name": "get",
+            "url": "/product/get",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-02-23T01:33:32.368Z",
+            "modified": "2024-02-23T14:32:17.954Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5a1e9df6-dc9f-4161-87d4-515c7b8afeee",
+            "colId": "027364a1-199a-4a20-8225-d7e4e610dc1d",
+            "containerId": "d3a75a92-33d6-4576-a6a8-2c9610ab9169",
+            "name": "search",
+            "url": "/product/search",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2024-02-23T14:37:28.642Z",
+            "modified": "2024-02-23T14:58:55.153Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "id",
+                        "value": "65d8b1aab94354dc4569a814"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d243f306-4729-40cd-bc0b-deed0da23cb4",
+            "colId": "027364a1-199a-4a20-8225-d7e4e610dc1d",
+            "containerId": "6620c954-e0a9-47ba-ad62-690b4e401a9f",
+            "name": "registerAdmin",
+            "url": "/user/registerAdmin",
+            "method": "POST",
+            "sortNum": 200000,
+            "created": "2024-02-23T16:49:22.999Z",
+            "modified": "2024-02-23T17:07:19.562Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ4Y2U4OTUxMzE1OTJhYWY3NDQ1Y2IiLCJ1c2VybmFtZSI6Im1nb256YWxlejEiLCJuYW1lIjoiTWFudWVsaXRvIiwicm9sZSI6IkNMSUVOVCIsImlhdCI6MTcwODcwODAyMywiZXhwIjoxNzA4NzE4ODIzfQ.nWpjt4VSXchm4EFO143gTc7r9Sxx5TdC-x6z4BwMVv8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "admin 3"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "is"
+                    },
+                    {
+                        "name": "username",
+                        "value": "isadmin3"
+                    },
+                    {
+                        "name": "password",
+                        "value": "1234"
+                    },
+                    {
+                        "name": "email",
+                        "value": "isadmin3@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656"
+        }
+    }
+}
